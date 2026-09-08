@@ -1,4 +1,3 @@
-// My inventory
 let inventory = {
   keyboard: [500, 5],
   mouse: [250, 10],
@@ -22,14 +21,15 @@ function restockItem(productName, newQuantity) {
 }
 
 // Function 3 - total value
-function getInventoryValue(productName) {
-  let price = inventory[productName][0];
- ...
+function getInventoryValue() {
+  let total = 0;
+  for (let item in inventory) {
+    total += inventory[item][0] * inventory[item][1];
+  }
   return total;
-};
 }
 
 // testing
 console.log(getItemDetails("keyboard"));
 console.log(restockItem("keyboard", 10));
-console.log(getInventoryValue("keyboard"));
+console.log(getInventoryValue());
