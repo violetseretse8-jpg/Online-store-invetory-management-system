@@ -24,9 +24,9 @@ function restockItem(productName, newQuantity) {
 // Function 3 - total value
 function getInventoryValue(productName) {
   let price = inventory[productName][0];
-  let quantity = inventory[productName][1];
-  let total = price * quantity;
+ ...
   return total;
+};
 }
 
 // testing
