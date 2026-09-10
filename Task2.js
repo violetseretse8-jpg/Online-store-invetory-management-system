@@ -56,3 +56,13 @@ for (let i = 0; i < numbers.length; i++) {
   if (!found) { uniqueNumbers[uniqueNumbers.length] = numbers[i]; }
 }
 console.log("C Unique:", uniqueNumbers);
+
+// PART 1d - IPO
+// INPUT: numbers array
+// PROCESS: loop to add all numbers
+// OUTPUT: total sum
+let sum = 0;
+for (let i = 0; i < numbers.length; i++) {
+  sum = sum + numbers[i];
+}
+console.log("D Sum:", sum);
