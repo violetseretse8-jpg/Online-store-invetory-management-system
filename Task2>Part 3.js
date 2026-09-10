@@ -92,3 +92,15 @@ for (let i = 0; i < developers.length; i++) {
   totalLaptops = totalLaptops + developers[i].laptops.length;
 }
 console.log("3d Total Laptops:", totalLaptops);
+
+// PART 3e - IPO
+// INPUT: developers array
+// PROCESS: loop computerSetups and add monitors
+// OUTPUT: total monitors
+let totalMonitors = 0;
+for (let i = 0; i < developers.length; i++) {
+  for (let j = 0; j < developers[i].computerSetups.length; j++) {
+    totalMonitors = totalMonitors + developers[i].computerSetups[j].monitors;
+  }
+}
+console.log("3e Total Monitors:", totalMonitors);
