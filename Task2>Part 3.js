@@ -166,3 +166,10 @@ for (let i = 0; i < developers.length; i++) {
   }
 }
 console.log("3j Total Mice:", totalMice, "Speakers:", totalSpeakers);
+
+// PART 3k - IPO
+// INPUT: developers array
+// PROCESS: total gadgets = phones + laptops + setups
+// OUTPUT: total gadgets
+let totalGadgets = totalPhones + totalLaptops + totalSetups;
+console.log("3k Total Gadgets:", totalGadgets);
