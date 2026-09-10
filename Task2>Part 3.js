@@ -173,3 +173,17 @@ console.log("3j Total Mice:", totalMice, "Speakers:", totalSpeakers);
 // OUTPUT: total gadgets
 let totalGadgets = totalPhones + totalLaptops + totalSetups;
 console.log("3k Total Gadgets:", totalGadgets);
+
+// PART 3l - IPO
+// INPUT: developers array
+// PROCESS: check for setup with 0 keyboards
+// OUTPUT: names that have 0 keyboards
+let zeroKeyboardNames = [];
+for (let i = 0; i < developers.length; i++) {
+  for (let j = 0; j < developers[i].computerSetups.length; j++) {
+    if (developers[i].computerSetups[j].keyboards === 0) {
+      zeroKeyboardNames[zeroKeyboardNames.length] = developers[i].name;
+    }
+  }
+}
+console.log("3l Zero Keyboard:", zeroKeyboardNames);
