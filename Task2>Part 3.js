@@ -104,3 +104,13 @@ for (let i = 0; i < developers.length; i++) {
   }
 }
 console.log("3e Total Monitors:", totalMonitors);
+
+// PART 3f - IPO
+// INPUT: developers array
+// PROCESS: loop and count computerSetups length
+// OUTPUT: total setups
+let totalSetups = 0;
+for (let i = 0; i < developers.length; i++) {
+  totalSetups = totalSetups + developers[i].computerSetups.length;
+}
+console.log("3f Total Setups:", totalSetups);
