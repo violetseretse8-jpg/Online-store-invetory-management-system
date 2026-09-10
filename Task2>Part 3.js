@@ -128,3 +128,15 @@ for (let i = 0; i < developers.length; i++) {
   }
 }
 console.log("3g Most Phones:", mostPhonesName, mostPhones);
+
+// PART 3h - IPO
+// INPUT: developers array
+// PROCESS: loop to find empty laptops
+// OUTPUT: names with no laptops
+let noLaptopNames = [];
+for (let i = 0; i < developers.length; i++) {
+  if (developers[i].laptops.length === 0) {
+    noLaptopNames[noLaptopNames.length] = developers[i].name;
+  }
+}
+console.log("3h No Laptops:", noLaptopNames);
