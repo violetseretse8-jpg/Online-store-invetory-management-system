@@ -17,3 +17,17 @@ for (let i = 0; i < mixed.length; i++) {
   }
 }
 console.log("2a Numbers:", numbersOnly);
+
+// PART 2b - IPO
+// INPUT: mixed array
+// PROCESS: while loop, check if type is string
+// OUTPUT: stringsOnly array
+let stringsOnly = [];
+let j = 0;
+while (j < mixed.length) {
+  if (typeof mixed[j] === "string") {
+    stringsOnly[stringsOnly.length] = mixed[j];
+  }
+  j++;
+}
+console.log("2b Strings:", stringsOnly);
