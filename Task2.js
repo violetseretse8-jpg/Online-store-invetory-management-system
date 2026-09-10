@@ -26,7 +26,7 @@ for (let i = 0; i < sortedAscending.length; i++) {
 }
 console.log("A Ascending:", sortedAscending);
 
-// PART 1a - IPO
+// PART 1b - IPO
 // INPUT: numbers array
 // PROCESS: bubble sort descending - compare and swap if smaller
 // OUTPUT: sortedDescending high to low
