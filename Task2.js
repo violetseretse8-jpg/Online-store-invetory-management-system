@@ -42,3 +42,17 @@ for (let i = 0; i < sortedDescending.length; i++) {
   }
 }
 console.log("B Descending:", sortedDescending);
+
+// PART 1c - IPO
+// INPUT: numbers array
+// PROCESS: loop and keep only first occurrence of each number
+// OUTPUT: uniqueNumbers array
+let uniqueNumbers = [];
+for (let i = 0; i < numbers.length; i++) {
+  let found = false;
+  for (let j = 0; j < uniqueNumbers.length; j++) {
+    if (numbers[i] === uniqueNumbers[j]) { found = true; }
+  }
+  if (!found) { uniqueNumbers[uniqueNumbers.length] = numbers[i]; }
+}
+console.log("C Unique:", uniqueNumbers);
