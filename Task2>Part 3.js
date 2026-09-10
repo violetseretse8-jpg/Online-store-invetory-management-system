@@ -114,3 +114,17 @@ for (let i = 0; i < developers.length; i++) {
   totalSetups = totalSetups + developers[i].computerSetups.length;
 }
 console.log("3f Total Setups:", totalSetups);
+
+// PART 3g - IPO
+// INPUT: developers array
+// PROCESS: find who has most phones
+// OUTPUT: name and count
+let mostPhones = 0;
+let mostPhonesName = "";
+for (let i = 0; i < developers.length; i++) {
+  if (developers[i].phones.length > mostPhones) {
+    mostPhones = developers[i].phones.length;
+    mostPhonesName = developers[i].name;
+  }
+}
+console.log("3g Most Phones:", mostPhonesName, mostPhones);
