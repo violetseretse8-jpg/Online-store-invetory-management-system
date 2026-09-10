@@ -78,3 +78,15 @@ for (let i = 0; i < numbers.length; i++) {
   }
 }
 console.log("E >50:", greaterThan50);
+
+// PART 1f - IPO
+// INPUT: numbers array
+// PROCESS: loop and keep even numbers
+// OUTPUT: evenNumbers array
+let evenNumbers = [];
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] % 2 === 0) {
+    evenNumbers[evenNumbers.length] = numbers[i];
+  }
+}
+console.log("F Even:", evenNumbers);
