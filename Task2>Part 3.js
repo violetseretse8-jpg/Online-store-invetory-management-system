@@ -140,3 +140,15 @@ for (let i = 0; i < developers.length; i++) {
   }
 }
 console.log("3h No Laptops:", noLaptopNames);
+
+// PART 3i - IPO
+// INPUT: developers array
+// PROCESS: loop and add all keyboards
+// OUTPUT: total keyboards
+let totalKeyboards = 0;
+for (let i = 0; i < developers.length; i++) {
+  for (let j = 0; j < developers[i].computerSetups.length; j++) {
+    totalKeyboards = totalKeyboards + developers[i].computerSetups[j].keyboards;
+  }
+}
+console.log("3i Total Keyboards:", totalKeyboards);
