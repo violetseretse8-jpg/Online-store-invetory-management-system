@@ -63,3 +63,16 @@ for (let i = 0; i < stringsOnly.length; i++) {
   }
 }
 console.log("2d Greeting:", greeting);
+
+
+// PART 2e - IPO
+// INPUT: mixed array
+// PROCESS: loop and keep everything that is NOT a string
+// OUTPUT: noStrings array
+let noStrings = [];
+for (let i = 0; i < mixed.length; i++) {
+  if (typeof mixed[i]!== "string") {
+    noStrings[noStrings.length] = mixed[i];
+  }
+}
+console.log("2e No Strings:", noStrings);
