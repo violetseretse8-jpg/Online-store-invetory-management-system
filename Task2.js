@@ -66,3 +66,15 @@ for (let i = 0; i < numbers.length; i++) {
   sum = sum + numbers[i];
 }
 console.log("D Sum:", sum);
+
+// PART 1e - IPO
+// INPUT: numbers array
+// PROCESS: loop and keep numbers > 50
+// OUTPUT: greaterThan50 array
+let greaterThan50 = [];
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] > 50) {
+    greaterThan50[greaterThan50.length] = numbers[i];
+  }
+}
+console.log("E >50:", greaterThan50);
