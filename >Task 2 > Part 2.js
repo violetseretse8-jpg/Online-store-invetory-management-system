@@ -31,3 +31,17 @@ while (j < mixed.length) {
   j++;
 }
 console.log("2b Strings:", stringsOnly);
+
+// PART 2c - IPO
+// INPUT: mixed array
+// PROCESS: do while loop, add only numbers
+// OUTPUT: total sum
+let sumMixed = 0;
+let k = 0;
+do {
+  if (typeof mixed[k] === "number") {
+    sumMixed = sumMixed + mixed[k];
+  }
+  k++;
+} while (k < mixed.length);
+console.log("2c Sum:", sumMixed);
