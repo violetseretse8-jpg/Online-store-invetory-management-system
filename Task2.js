@@ -114,3 +114,15 @@ for (let i = 0; i < numbers.length; i++) {
   }
 }
 console.log("H Divisible by 5:", divisibleBy5);
+
+// PART 1i - IPO
+// INPUT: numbers array
+// PROCESS: loop and keep divisible by both 3 and 5
+// OUTPUT: divisibleByBoth array
+let divisibleByBoth = [];
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] % 3 === 0 && numbers[i] % 5 === 0) {
+    divisibleByBoth[divisibleByBoth.length] = numbers[i];
+  }
+}
+console.log("I Divisible by 3 and 5:", divisibleByBoth);
