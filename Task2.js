@@ -25,3 +25,20 @@ for (let i = 0; i < sortedAscending.length; i++) {
   }
 }
 console.log("A Ascending:", sortedAscending);
+
+// PART 1a - IPO
+// INPUT: numbers array
+// PROCESS: bubble sort descending - compare and swap if smaller
+// OUTPUT: sortedDescending high to low
+let sortedDescending = [];
+for (let i = 0; i < numbers.length; i++) { sortedDescending[i] = numbers[i]; }
+for (let i = 0; i < sortedDescending.length; i++) {
+  for (let j = 0; j < sortedDescending.length - 1; j++) {
+    if (sortedDescending[j] < sortedDescending[j+1]) {
+      let temp = sortedDescending[j];
+      sortedDescending[j] = sortedDescending[j+1];
+      sortedDescending[j+1] = temp;
+    }
+  }
+}
+console.log("B Descending:", sortedDescending);
