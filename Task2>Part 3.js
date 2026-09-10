@@ -58,3 +58,13 @@ for (let i = 0; i < developers.length; i++) {
   devNames[devNames.length] = developers[i].name;
 }
 console.log("3a Names:", devNames);
+
+// PART 3b - IPO
+// INPUT: developers array
+// PROCESS: loop and count phones length
+// OUTPUT: total phones
+let totalPhones = 0;
+for (let i = 0; i < developers.length; i++) {
+  totalPhones = totalPhones + developers[i].phones.length;
+}
+console.log("3b Total Phones:", totalPhones);
