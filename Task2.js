@@ -126,3 +126,15 @@ for (let i = 0; i < numbers.length; i++) {
   }
 }
 console.log("I Divisible by 3 and 5:", divisibleByBoth);
+
+// PART 1j - IPO
+// INPUT: numbers array
+// PROCESS: loop to count how many times 34 appears
+// OUTPUT: count of 34
+let count34 = 0;
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] === 34) {
+    count34 = count34 + 1;
+  }
+}
+console.log("J Count of 34:", count34);
