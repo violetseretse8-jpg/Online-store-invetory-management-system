@@ -152,3 +152,17 @@ for (let i = 0; i < developers.length; i++) {
   }
 }
 console.log("3i Total Keyboards:", totalKeyboards);
+
+// PART 3j - IPO
+// INPUT: developers array
+// PROCESS: loop and add all mice and speakers
+// OUTPUT: totals
+let totalMice = 0;
+let totalSpeakers = 0;
+for (let i = 0; i < developers.length; i++) {
+  for (let j = 0; j < developers[i].computerSetups.length; j++) {
+    totalMice = totalMice + developers[i].computerSetups[j].mice;
+    totalSpeakers = totalSpeakers + developers[i].computerSetups[j].speakers;
+  }
+}
+console.log("3j Total Mice:", totalMice, "Speakers:", totalSpeakers);
