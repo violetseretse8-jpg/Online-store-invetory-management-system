@@ -45,3 +45,21 @@ do {
   k++;
 } while (k < mixed.length);
 console.log("2c Sum:", sumMixed);
+
+// PART 2d - IPO
+// INPUT: stringsOnly array from 2b
+// PROCESS: loop to build greeting with commas and and
+// OUTPUT: greeting string
+let greeting = "Hello, ";
+for (let i = 0; i < stringsOnly.length; i++) {
+  if (i === stringsOnly.length - 1 && stringsOnly.length > 1) {
+    greeting = greeting + "and " + stringsOnly[i] + ".";
+  } else if (stringsOnly.length === 1) {
+    greeting = greeting + stringsOnly[i] + ".";
+  } else if (i === stringsOnly.length - 2) {
+    greeting = greeting + stringsOnly[i] + " ";
+  } else {
+    greeting = greeting + stringsOnly[i] + ", ";
+  }
+}
+console.log("2d Greeting:", greeting);
