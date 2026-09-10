@@ -82,3 +82,13 @@ for (let i = 0; i < developers.length; i++) {
   }
 }
 console.log("3c Samsung Phones:", samsungCount);
+
+// PART 3d - IPO
+// INPUT: developers array
+// PROCESS: loop and count laptops
+// OUTPUT: total laptops
+let totalLaptops = 0;
+for (let i = 0; i < developers.length; i++) {
+  totalLaptops = totalLaptops + developers[i].laptops.length;
+}
+console.log("3d Total Laptops:", totalLaptops);
