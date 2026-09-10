@@ -138,3 +138,13 @@ for (let i = 0; i < numbers.length; i++) {
   }
 }
 console.log("J Count of 34:", count34);
+
+// PART 1k - IPO
+// INPUT: numbers array
+// PROCESS: loop from end to start to reverse
+// OUTPUT: reversed array
+let reversed = [];
+for (let i = numbers.length - 1; i >= 0; i--) {
+  reversed[reversed.length] = numbers[i];
+}
+console.log("K Reversed:", reversed);
