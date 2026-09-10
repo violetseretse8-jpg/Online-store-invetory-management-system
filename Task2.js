@@ -102,3 +102,15 @@ for (let i = 0; i < numbers.length; i++) {
   }
 }
 console.log("G Divisible by 3:", divisibleBy3);
+
+// PART 1h - IPO
+// INPUT: numbers array
+// PROCESS: loop and keep divisible by 5
+// OUTPUT: divisibleBy5 array
+let divisibleBy5 = [];
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] % 5 === 0) {
+    divisibleBy5[divisibleBy5.length] = numbers[i];
+  }
+}
+console.log("H Divisible by 5:", divisibleBy5);
