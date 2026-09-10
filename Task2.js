@@ -90,3 +90,15 @@ for (let i = 0; i < numbers.length; i++) {
   }
 }
 console.log("F Even:", evenNumbers);
+
+// PART 1g - IPO
+// INPUT: numbers array
+// PROCESS: loop and keep divisible by 3
+// OUTPUT: divisibleBy3 array
+let divisibleBy3 = [];
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] % 3 === 0) {
+    divisibleBy3[divisibleBy3.length] = numbers[i];
+  }
+}
+console.log("G Divisible by 3:", divisibleBy3);
