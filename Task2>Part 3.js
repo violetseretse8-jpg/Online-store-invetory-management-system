@@ -68,3 +68,17 @@ for (let i = 0; i < developers.length; i++) {
   totalPhones = totalPhones + developers[i].phones.length;
 }
 console.log("3b Total Phones:", totalPhones);
+
+// PART 3c - IPO
+// INPUT: developers array
+// PROCESS: loop phones and count Samsung
+// OUTPUT: samsung count
+let samsungCount = 0;
+for (let i = 0; i < developers.length; i++) {
+  for (let j = 0; j < developers[i].phones.length; j++) {
+    if (developers[i].phones[j] === "Samsung") {
+      samsungCount++;
+    }
+  }
+}
+console.log("3c Samsung Phones:", samsungCount);
